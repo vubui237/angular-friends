@@ -303,11 +303,7 @@ Note that the filter searches all attributes of the model recursively.
 <details>
   <summary>`index.html`</summary>
   ```html
-  <input
-    class="form-control"
-    placeholder="Search Anything About Your Friends"
-    ng-model="friendFilter"
-  >
+  <input class="form-control" placeholder="Search Anything About Your Friends" ng-model="friendFilter">
   <!-- other html code -->
   <li ng-repeat="friend in friends | filter: friendFilter">
   ```
@@ -337,16 +333,8 @@ Filtering works by matching the exact structure of the data you're searching. Th
 <details>
   <summary>`index.html`</summary>
   ```html
-    <input
-      class="form-control"
-      placeholder="Search Name"
-      ng-model="friendFilter.name"
-    >
-    <input
-      class="form-control"
-      placeholder="Search By State"
-      ng-model="friendFilter.location.state"
-    >
+    <input class="form-control" placeholder="Search Name" ng-model="friendFilter.name">
+    <input class="form-control" placeholder="Search By State" ng-model="friendFilter.location.state">
     <!-- other html code -->
     <ul>
       <li ng-repeat="friend in friends | filter: friendFilter">
